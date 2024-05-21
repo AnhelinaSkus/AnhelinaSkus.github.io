@@ -5,13 +5,13 @@
 
 .header{
     background-color: #000;
-    margin-bottom: 90px;
+   
 }
 .header__inner{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding:20px;
+    padding:20px 0;
 
 }
 .header__title{
@@ -27,11 +27,12 @@ ul{
 }
 .container{
     max-width: 1220px;
-    padding: 0 10px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 .logo__inner{
     display: flex;
+    
 }
 .menu__list{
     display: flex;
@@ -52,5 +53,54 @@ ul{
 }
 .user-nav__social{
     display: flex;
+    justify-content: space-between; 
+}
+
+
+@media (max-width: 850px){
+    .menu__list{
+        display: none;
+    }
+}
+@media (max-width: 450px){
+    .header__inner{
+        flex-direction: column;
+    }
+    .user-nav{
+       padding: 0; 
+    }
+
+}
+.main{
+    background-color: #c9c1c1;
+}
+.headline{
+   
+    display: flex;
     justify-content: space-between;
+    
+}
+.headline-text{
+    width: 40%;
+}
+.headline-image{
+    width: 40%;
+}
+.headline-text{
+    padding-top: 70px;
+}
+.title{
+    text-transform: uppercase;
+    padding: 35px 0;
+}
+.headline-btn{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffff;
+    background-color:#000;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 100px;
 }
