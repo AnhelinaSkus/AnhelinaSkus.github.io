@@ -161,21 +161,40 @@ ul{
     padding: 5px 7px;
 }  
 }
-.doctors{
+.doctor-anhelina{
    padding: 70px 0 50px; 
-   background-color: #000;
    color: #FFFFFF;
+   background-color: #000;
 }
 .doctor-title{
    margin: 0 0 70px;
    text-transform: uppercase;
    text-align: center;
 }
-.doctor-list{
+.anhelina{
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    align-items: center;
+    width: 80%;
     text-align: center;
-    margin: 50px 20px 0;
-    padding: 0 40px;
+}
+.about-anhelina{
+    width: 50%;
+}
+
+.doctor-nasty{
+    padding: 70px 0 50px; 
+    color: #000;
+    background-color: #c9c1c1;
+ }
+.nasty{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+}
+.about-nasty{
+    width: 50%;
 }
