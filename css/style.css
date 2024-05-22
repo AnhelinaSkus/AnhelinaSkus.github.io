@@ -161,3 +161,21 @@ ul{
     padding: 5px 7px;
 }  
 }
+.doctors{
+   padding: 70px 0 50px; 
+   background-color: #000;
+   color: #FFFFFF;
+}
+.doctor-title{
+   margin: 0 0 70px;
+   text-transform: uppercase;
+   text-align: center;
+}
+.doctor-list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    text-align: center;
+    margin: 50px 20px 0;
+    padding: 0 40px;
+}
