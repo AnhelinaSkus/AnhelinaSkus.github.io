@@ -5,6 +5,7 @@
 
 .header{
     background-color: #000;
+    position: sticky;
    
 }
 .header__inner{
@@ -78,6 +79,7 @@ ul{
    
     display: flex;
     justify-content: space-between;
+
     
 }
 .headline-text{
@@ -103,4 +105,59 @@ ul{
     padding: 30px;
     border-radius: 30px;
     margin-top: 100px;
+    margin-bottom: 50px;
+}
+@media (max-width: 1100px){
+.headline-img{
+    max-width: 100%;
+}
+}
+@media (max-width: 990px){
+.headline{
+    align-items: center;
+}
+}
+@media (max-width: 896px){
+.headline-btn{
+    font-weight: 700;
+    font-size: 18px;
+    padding: 15px;
+}    
+.headline-text{
+    padding-top: 10px;
+}
+}
+@media (max-width: 780px){
+.title{
+    margin: 0;
+    padding: 0;
+}
+.headline-btn{
+    margin: 50px 0 25px;
+}
+}
+@media (max-width: 663px){
+.headline-btn{
+    font-size: 12px;
+    padding: 5px 7px;
+}   
+.title{
+    font-size: 24px;
+}
+.headline-text{
+    font-size: 14px;
+}
+}
+@media (max-width: 455px){
+.title{
+    font-size: 18px;
+}  
+.headline-text{
+    font-size: 12px;
+    width: 58%;
+}
+.headline-btn{
+    font-size: 12px;
+    padding: 5px 7px;
+}  
 }
