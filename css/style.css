@@ -6,6 +6,7 @@
 .header{
     background-color: #000;
     position: sticky;
+    top: 0;
    
 }
 .header__inner{
@@ -65,10 +66,18 @@ ul{
 }
 @media (max-width: 450px){
     .header__inner{
-        flex-direction: column;
+        padding: 0;
     }
     .user-nav{
        padding: 0; 
+    }
+
+    .logo img {
+        width: 24px;
+    }
+
+    .header__title{
+        font-size: 18px;
     }
 
 }
@@ -176,11 +185,16 @@ ul{
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
-    width: 80%;
-    text-align: center;
+    width: 100%;
+    text-align: center; 
+    padding-left: 0;
 }
-.about-anhelina{
+.doctor-item{
     width: 50%;
+}
+.about{
+    width: 50%;
+    text-align: left;
 }
 
 .doctor-nasty{
@@ -192,9 +206,44 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    text-align: center;
+    width: 100%;
+    text-align: center; 
+    padding-left: 0;
 }
-.about-nasty{
-    width: 50%;
+@media (max-width: 900px){ 
+    .doctor-img{
+        max-width: 60%;
+    }
 }
+@media (max-width: 530px){
+.about{
+    font-size: 12px;
+}
+
+.doctor-title{
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+.doctor-anhelina,.doctor-nasty{
+    padding: 35px 0 25px;
+}
+.doctor-item{
+    font-size: 12px; 
+}
+}
+@media (max-width: 480px){
+    .about{
+        font-size: 10px;
+    }
+    .doctor-img{
+        max-width: 50%;
+    }
+    .doctor-item{
+        font-size: 10px;
+    }
+    .nasty{
+        margin: 0;
+        padding: 0;
+    }
+}
+   
