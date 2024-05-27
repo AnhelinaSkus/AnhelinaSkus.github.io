@@ -7,6 +7,7 @@
     background-color: #000;
     position: sticky;
     top: 0;
+    z-index: 2;
    
 }
 .header__inner{
@@ -246,4 +247,40 @@ ul{
         padding: 0;
     }
 }
-   
+
+ .accordeon{ 
+    background-color: #000;
+    color: #FFFFFF
+}
+.accordeon__item{
+  border-bottom: 1px solid #FFFFFF;  
+  padding: 20px 100px 0px 0px;
+  position: relative;
+}
+.accordeon__item::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 35px;
+    background-image: url('../images/arrow-down.svg');
+    right: 85px;
+    top: 35px;
+}
+.accordeon__triger{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.accordeon__triger-title{
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.accordeon__content{
+    padding-top: 20px;
+    display: none;
+}   
+.accordeon__item--active .accordeon__content{
+    display: flex;
+    justify-content: space-between;
+}
